@@ -1,0 +1,38 @@
+TYPE CONVERSION:  Automatic, implicit process where the compiler transforms a smaller datatype into a larger one (compatible datatype)
+
+TYPE CASTING:  Manual, explicit process where the programmer forces the compiler to convert a larger data type into a smaller one 
+using a specific operator, which can also cause data loss.
+DIFFERENT WAYS OF TYPE CASTING:
+1. Widening Casting (Implicit) -> automatic by compiler
+    byte -> short -> char -> int -> long -> float -> double
+2. Narrowing Casting(Explicit) -> Manually performed by the programmer
+    double -> float -> long -> int -> char -> short -> byte
+
+DEMO PROGRAM: 
+
+public class conversionandcasting 
+{
+    public static void main(String args[])
+    {
+//type conversion example(implicit/widening)
+int intval = 105;
+long lval = intval;
+float fval = lval;
+System.out.println("type conversion"+"\n");
+System.out.println("original integer value: "+ intval+"\n");
+System.out.println("converted to long type: "+ lval+"\n");
+System.out.println("converted to float type: "+ fval+"\n");
+
+//type casting example(explicit/narrowing)
+double dval = 9.87;
+int truncatedint = (int)dval;
+int largeint = 130;
+byte byteval = (byte)largeint;
+System.out.println("type casting"+"\n");
+System.out.println("original double value: "+ dval+"\n");
+System.out.println("casted to int : "+ truncatedint+"\n");
+System.out.println("original largeint value: "+ largeint+"\n");
+  System.out.println("casted to byte type: "+ byteval+"\n"); 
+ }
+}
+
