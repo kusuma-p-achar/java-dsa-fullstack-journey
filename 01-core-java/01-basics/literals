@@ -1,0 +1,36 @@
+LITERALS: are the fixed, constant value that is directly written into the source code that doesn't chamge the during the program execution.
+
+Example :
+
+public class literals 
+{
+    public static void main(String[] a)
+    {
+      //integer literals
+      int num1 = 0b101; //binary
+      int num2 = 585;
+      int num3= 0x7e;
+      int num4= 10_00_00_000;
+      System.out.println("the integer literals are:"+"\n"+num1+"\n"+num2+"\n"+num3+"\n"+ num4);
+
+      //float literals
+      float n1 =56f;
+      float temperature = -4.5F; // Uppercase suffix is also allowed
+      float wholeNumber = 100f;  // Evaluates to 100.0
+      System.out.println("float literal example:"+"\n"+n1+"\n"+temperature+"\n"+wholeNumber+"\n");
+
+      //double literals
+      double d1 = 56;
+      double d2 = 12e10;
+       System.out.println("double literal is:"+"\n"+d1+"\n"+d2+"\n");
+
+       //boolean literal
+       boolean b = true;
+       System.out.println("boolean literal is:"+"\n"+b+"\n");
+
+       //character literal
+       char ch = 'k';
+       System.out.println("character literal is:"+"\n"+ch+"\n");
+    }
+}
+}
