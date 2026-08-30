@@ -1,0 +1,61 @@
+JAVA OPERATORS
+1. What are Operators?
+Operators are symbols used to perform operations on variables and values.
+Operators follow a defined precedence and associativity to determine the order of execution.
+
+2. Types of Operators 
+ 1. Arithmetic Operators
+ Used to perform basic mathematical operations.
+ Operators:
+ +   -   *   /   %
+
+ 2. Unary Operators
+ Operate on a single operand.
+ Operators:
+ ++   --
+
+ 3. Assignment Operators
+ Used to assign or update values in variables.
+ Operators:
+ =   +=   -=   *=   /=   %=
+
+ 4. Relational Operators
+ Used to compare two values.
+ They are also called comparison operators.
+ Operators:
+ >   <   ==   <=   >=   !=
+ The result of a relational operation is either true or false.
+
+ 5. Logical Operators
+ Used to perform logical operations, generally with boolean values.
+ Operators:
+ &&   ||   !
+
+ 6. Ternary Operator
+ The ternary operator is a conditional operator used to choose between two values based on a condition.
+ Syntax:
+ condition ? true : false
+ Example:
+ int result = (10 > 5) ? 10 : 5;
+
+ 7. Bitwise and Shift Operators
+ Used to perform operations at the bit level.
+ Operators:
+ &   |   ^   <<   >>   >>>
+
+ 8. instanceof Operator
+ The instanceof operator is used to check whether an object belongs to a specific class, subclass, or interface.
+ It is also called a type comparison operator.
+ Syntax:
+ object instanceof Type
+
+ Example:
+ 1. obj instanceof Student
+
+ obj → reference variable pointing to an object
+ instanceof → checks the object's type
+ Student → class/interface whose type is being checked
+
+2. childObject instanceof ParentClass (returns true)
+   The child class inherits all properties and types from the parent.
+ 
