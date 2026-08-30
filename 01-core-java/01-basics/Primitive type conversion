@@ -1,0 +1,87 @@
+JAVA PRIMITIVE DATA TYPE CONVERSION
+
+1. Incompatible Type Conversions:
+The following conversions are not directly compatible and require explicit casting:
+long -> byte
+double -> int
+float -> int
+double -> byte
+float -> byte
+double -> short
+float -> short
+double -> char
+float -> long
+double -> long
+
+2. Compatible Primitive Numeric Conversions:
+Primitive numeric types can be converted automatically when converting from a smaller/narrower data type to a larger/wider data type.
+
+BYTE can be converted to:
+short — Automatic
+int — Automatic
+long — Automatic
+float — Automatic
+double — Automatic
+char — Casting
+
+SHORT can be converted to:
+int — Automatic
+long — Automatic
+float — Automatic
+double — Automatic
+byte — Casting
+char — Casting
+
+CHAR can be converted to:
+int — Automatic
+long — Automatic
+float — Automatic
+double — Automatic
+byte — Casting
+short — Casting
+
+INT can be converted to:
+long — Automatic
+float — Automatic
+double — Automatic
+byte — Casting
+short — Casting
+char — Casting
+
+LONG can be converted to:
+float — Automatic
+double — Automatic
+byte — Casting
+short — Casting
+char — Casting
+int — Casting
+
+FLOAT can be converted to:
+double — Automatic
+byte — Casting
+short — Casting
+char — Casting
+int — Casting
+long — Casting
+
+DOUBLE can be converted to:
+byte — Casting
+short — Casting
+char — Casting
+int — Casting
+long — Casting
+float — Casting
+
+3. Wrapper Classes and Primitive Data Types
+The following wrapper classes correspond directly to their respective primitive data types:
+boolean - Boolean
+byte - Byte
+short - Short
+char - Character
+int - Integer
+long - Long
+float - Float
+double - Double
+
+NOTE:
+These conversions between primitive types and their corresponding wrapper classes are handled through boxing and unboxing.
