@@ -1,0 +1,31 @@
+ARITHMETIC OPERATORS
+Java arithmetic operators are symbols used to perform standard mathematical calculations on numeric primitive data types like int, double, and float. 
+They are divided into binary operators (which require two values) and unary operators (which require only one value)
+
+DEMO PROGRAM:
+
+public class arithmeticoperators
+{
+    public static void main(String args[])
+    {
+         int n1 = 7;
+         int n2 = 9;
+         int sum = n1+n2;
+         int difference = n1-n2;
+         int product = n1*n2;
+         double reminder = n1 % n2;
+         double quotient = n1/n2;
+    System.out.println("n1 is: "+n1+"\n");
+    System.out.println("n2 is: "+n2+"\n");
+    System.out.println("sum is: "+sum+"\n");    
+    System.out.println("difference is: "+difference+"\n");   
+    System.out.println("product is: "+product+"\n");
+    System.out.println("reminder is: "+reminder+"\n");
+    System.out.println("quotient is: "+quotient+"\n");
+
+        int preincrement= ++n1;        //increment the value by one and then fetch the value
+        int postincrement = n1++;     //fetch the value and then increments
+    System.out.println("post incremented value is:"+postincrement+"\n");
+    System.out.println("pre incremented value is:"+preincrement+"\n");
+}
+}
