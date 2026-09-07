@@ -1,0 +1,48 @@
+LOGICAL OPERATORS: 
+The core logical operators in Java are AND (&&), OR (||), and NOT (!).
+1. Logical AND (&&): Returns true only if both operands are true. If the first part is false, it stops checking.
+2. Logical OR (||): Returns true if at least one operand is true. If the first part is true, it stops checking.
+3. Logical NOT (!): Reverses the state of a boolean.(true becomes false, and false becomes true.)
+4. Bitwise/Logical AND (&) and OR (|): Evaluate both sides regardless of the first operand's value.
+                                       They do not short-circuit.(&& and || stop evaluating the expression as soon as the final result is known.)
+Operator Precedence:
+  ! has the highest precedence.
+  && has higher precedence than ||.
+  Always parentheses () need to be used to make complex conditions clear and to avoid bugs.
+
+
+EXAMPLE PROGRAM:
+
+import java.util.Scanner;
+public class logicaloperators {
+    public static void main(String args[])
+    {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter your percentage score (0-100): ");
+        int score = input.nextInt();
+
+        // Using OR (||) to catch errors first
+        if (score < 0 || score > 100) {
+            System.out.println("Error: Invalid score entered!");
+        } 
+        // Using AND (&&) to check ranges
+        else if (score >= 90 && score <= 100) {
+            System.out.println("EXCELLENT");
+        } 
+        else if (score >= 80 && score < 90) {
+            System.out.println("GOOD");
+        } 
+        else if (score >= 70 && score < 80) {
+            System.out.println("BETTER, CAN STILL IMPROVE");
+        } 
+        else {
+            System.out.println("POOR, BETTER LUCK NEXT TIME");
+        }
+
+        input.close();
+    }
+}
+
+NOTE: input.close(); tells the computer that your program is done reading data and can free up the system memory it was using.
+        EXAMPLE:  hanging up a phone call when you are done talking so the line is free for others.
