@@ -1,0 +1,25 @@
+RELATIONAL OPERATORS
+Relational operators in Java are used to compare two values (operands) to determine the relationship between them. 
+These operators always return a boolean value: either true or false. 
+They are fundamental for decision-making structures like if-else statements and loops like for and while loop.
+The relational operators are: =, ==, >, <, >=, <=, !=
+  
+  NOTE: 
+  1. '=' is used to assign values to variables, whereas '==' is used exclusively for comparison.
+  2. Relational operators can also be used to compare primitive data types like floating-point numbers(float, double) and characters(char) based on their numeric ASCII/Unicode values.
+  3. '==' need to be avoided to compare the actual text inside two String objects, as it compares their memory references rather than values. Instead ' .equals()' method can be used.
+
+EXAMPLE:
+public class relationaloperators 
+{
+    public static void main(String args[])
+    {
+//<,>,<=,>=,==,!= are the various relational operators and the return type is boolean i.e true or false
+//long and double 8 bytes  float is 4 bytes
+double k1 = 8.125;
+double k2 =  8.569;
+double k3 = 8.135;
+boolean result = k1 > k3;
+System.out.println(result);
+   }
+}
